@@ -1,0 +1,39 @@
+.footer {
+    background-color: $backColor;
+    min-height: 79px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    &__right {
+        display: flex;
+        gap: 7px;
+    }
+
+
+    &__icons {
+        width: 2rem;
+        height: 2rem;
+        background-color: #FBFBFB;
+        padding: 0.5rem;
+
+
+        &:hover path {
+            fill: #FBFBFB;
+        }
+
+        &:hover {
+            background-color: $colorSiteSelect;
+        }
+    }
+}

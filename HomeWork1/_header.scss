@@ -1,0 +1,134 @@
+.header {
+    background-color: $backColor;
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    &__left {
+        padding: 18px 0 18px 0;
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+
+    &__img {
+        width: max-content;
+        transition: all 0.3s;
+    }
+
+    &__img:hover {
+        scale: 1.1;
+    }
+
+    .search {
+        display: flex;
+
+        &__button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        &__icon {
+            border: none;
+            background: none;
+        }
+
+        &__input {
+            display: none;
+            margin: 0 0 0 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        &__input:focus {
+            outline: none;
+            display: flex;
+        }
+
+        &__input::placeholder {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: $backColor;
+            opacity: 0.67;
+        }
+
+        &:hover .search__input {
+            display: flex;
+        }
+
+        &__icon:hover path {
+            fill: $colorSiteSelect;
+        }
+    }
+
+    &__right {
+        padding: 18px 0 18px 0;
+        display: flex;
+        gap: 33px;
+        align-items: center;
+    }
+
+
+    &__icon:hover path {
+        fill: $colorSiteSelect;
+    }
+
+    &__menu {
+
+        &__content {
+            background-color: #fff;
+            width: 232px;
+            height: 639px;
+            margin-top: 26px;
+            position: absolute;
+            transition: display 1s;
+            z-index: 1;
+        }
+
+        &__title {
+            color: #000;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 24px;
+            padding-top: 37px;
+            padding-left: 34px;
+        }
+
+        &__heading {
+            color: $colorSiteSelect;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        &__list {
+            padding-bottom: 14px;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                list-style-type: none;
+                color: #6F6E6E;
+                font-size: 14px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding-left: 54px;
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,105 @@
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/subscribe.jpg);
+    background-size: cover;
+
+    &__left {
+        width: 25vw;
+        padding-bottom: 126px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            padding-top: 86px;
+            margin-bottom: 24px;
+            width: max-content;
+        }
+
+        &__text {
+            text-align: center;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: $backColor;
+        }
+
+    }
+
+    &__right {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            padding-top: 150px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            color: $backColor;
+        }
+
+        &__heading {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: $backColor;
+            margin-bottom: 32px;
+        }
+
+        .form__box {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #E1E1E1;
+            border-radius: 50px;
+            background-color: #E1E1E1;
+            align-items: center;
+
+            &__input {
+                border: none;
+                border-radius: 50px;
+                background-color: #E1E1E1;
+                text-align: center;
+                color: #3e3e43;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                outline: 0;
+                outline-offset: 0;
+                padding: 15px;
+            }
+
+            &__btn {
+                padding: 1rem;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                border: $colorSiteSelect;
+                background: $colorSiteSelect;
+                color: #fff;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                transition: 0.3s;
+            }
+
+            &__btn:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
