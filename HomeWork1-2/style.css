@@ -255,6 +255,10 @@ summary {
   display: block;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 a {
   text-decoration: none;
   transition: all 0.3s;
@@ -397,7 +401,6 @@ img {
   gap: 30px;
 }
 .product-box__content .img__product {
-  position: relative;
   width: -moz-max-content;
   width: max-content;
 }
@@ -455,6 +458,75 @@ img {
 .product-box .button__product:hover {
   background-color: #F16D7F;
   color: #FFFFFF;
+}
+
+.filter {
+  padding-top: 39px;
+  position: relative;
+  height: 132px;
+}
+.filter__right {
+  left: 590px;
+  top: 51px;
+  position: absolute;
+}
+.filter__details {
+  padding: 13px 16px 16px;
+  width: 360px;
+  position: absolute;
+  top: 39px;
+  box-sizing: border-box;
+}
+.filter__details[open] {
+  background-color: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter__details[open] .filter__title {
+  color: #F16D7F;
+}
+.filter__details[open] path {
+  fill: #F16D7F;
+}
+.filter__summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.filter__title {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.filter__item {
+  margin-top: 16px;
+}
+.filter__heading {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 11px 11px 11px;
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 5px solid #F16D7F;
+}
+.filter__link-box {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 24px 16px;
+}
+.filter__link {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__item[open] .filter__heading {
+  color: #F16D7F;
 }
 
 .advantages {
