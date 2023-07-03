@@ -679,7 +679,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #4D4D4D;
+  border: 0.5px solid #EAEAEA;
   padding-top: 64px;
   padding-bottom: 64px;
   max-width: 1140px;
@@ -744,4 +744,207 @@ img {
 }
 .content__button:hover path {
   fill: #fff;
+}
+
+.shopping {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shop__cart {
+  margin: 96px 0 128px;
+}
+.shop__cart-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.shop__cart-buttons-btn,
+.shop__cart-buttons .shop__cart-buttons-link {
+  padding: 17px 40px 17px 40px;
+  border: 1px solid #A4A4A4;
+  background: none;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.shop__cart-buttons-btn:hover,
+.shop__cart-buttons .shop__cart-buttons-link:hover {
+  color: #fff;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+  transition: all 0.2s;
+  scale: 1.1;
+}
+
+.cart__card {
+  display: flex;
+  margin: 0 0 40px 0;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  background: #FFF;
+}
+.cart__card .card__img {
+  width: 262px;
+  height: 306px;
+}
+.cart__card__icon {
+  font-size: 30px;
+  position: absolute;
+  right: 22px;
+  transition: fill 0.2s;
+  transition: rotate 1s;
+}
+.cart__card__icon:hover path {
+  fill: #F16D7F;
+}
+.cart__card__icon:hover {
+  scale: 1.1;
+  rotate: 180deg;
+}
+.cart__card-text {
+  display: flex;
+  flex-direction: column;
+  color: #222224;
+  padding: 22px 97px 62px 31px;
+  position: relative;
+  box-sizing: border-box;
+  width: 390px;
+  height: 306px;
+}
+.cart__card-text span {
+  margin: 0 0 6px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+.cart__card-text .text__decor {
+  color: #F16D7F;
+}
+.cart__card-text .quantity {
+  display: flex;
+}
+.cart__card-text .quantity__input {
+  border: 1px solid #EAEAEA;
+  width: 44px;
+  height: 25px;
+  margin-left: 24px;
+  text-align: center;
+}
+.cart__card__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 42px;
+}
+
+.shop__forms {
+  margin-top: 113px;
+  width: 360px;
+  height: 214px;
+}
+.shop__forms .shipping__form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 57px;
+}
+.shop__forms .shipping__form__heading {
+  color: #222224;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.shop__forms .shipping__form input {
+  width: 360px;
+  height: 45px;
+  background-color: #FFF;
+  border: 1px solid #A4A4A4;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 0.2s;
+}
+.shop__forms .shipping__form input:focus::-moz-placeholder {
+  visibility: hidden;
+}
+.shop__forms .shipping__form input:focus::placeholder {
+  visibility: hidden;
+}
+.shop__forms .shipping__form input:hover {
+  border: 2px solid #F16D7F;
+}
+.shop__forms .shipping__form button {
+  width: 100px;
+  height: 35px;
+  background: none;
+  border: 1px solid #A4A4A4;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.shop__forms .shipping__form button:hover {
+  color: #fff;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+  transition: all 0.2s;
+  scale: 1.1;
+}
+.shop__forms .check__form {
+  background: #F5F3F3;
+  padding: 39px 43px 42px 43px;
+  text-align: right;
+}
+.shop__forms .check__form h6 {
+  color: #4A4A4A;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.shop__forms .check__form h6 span {
+  margin-left: 25px;
+}
+.shop__forms .check__form h4 {
+  color: #222224;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.shop__forms .check__form h4 span {
+  margin-left: 25px;
+  color: #F16D7F;
+  font-weight: bold;
+}
+.shop__forms .check__form hr {
+  color: #E2E2E2;
+  margin: 21px 0 21px 0;
+}
+.shop__forms .check__form button {
+  width: 273px;
+  height: 50px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-color: #F16D7F;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.shop__forms .check__form button:hover {
+  scale: 1.1;
 }/*# sourceMappingURL=style.css.map */
