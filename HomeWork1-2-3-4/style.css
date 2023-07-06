@@ -947,4 +947,185 @@ img {
 }
 .shop__forms .check__form button:hover {
   scale: 1.1;
+}
+
+.registration {
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.registration__left {
+  margin-right: 64px;
+}
+.registration__left .registration__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__left .registration__form-heading {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__left .registration__form__name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__left .registration__form__name-input {
+  width: 360px;
+  height: 45px;
+  background-color: #FFF;
+  border: 1px solid #A4A4A4;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 0.1s;
+}
+.registration__left .registration__form__name-input:focus::-moz-placeholder {
+  visibility: hidden;
+}
+.registration__left .registration__form__name-input:focus::placeholder {
+  visibility: hidden;
+}
+.registration__left .registration__form__name-input:hover::-moz-placeholder {
+  color: #F16D7F;
+}
+.registration__left .registration__form__name-input:hover::placeholder {
+  color: #F16D7F;
+}
+.registration__left .registration__form__name-input:hover {
+  border: 2px solid #F16D7F;
+}
+.registration__left .registration__form__radio {
+  display: flex;
+  flex-direction: row;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__left .registration__form__radio-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #A4A4A4;
+  transition: all 0.2s;
+}
+.registration__left .registration__form__radio-input:checked {
+  border: 5px solid #F16D7F;
+}
+.registration__left .registration__form__radio-label {
+  margin: 0 20px 0 10px;
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__left .registration__form__radio-label:hover {
+  color: #F16D7F;
+}
+.registration__left .registration__form__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__left .registration__form__details-input {
+  width: 360px;
+  height: 45px;
+  background-color: #FFF;
+  border: 1px solid #A4A4A4;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 0.1s;
+}
+.registration__left .registration__form__details-input:focus::-moz-placeholder {
+  visibility: hidden;
+}
+.registration__left .registration__form__details-input:focus::placeholder {
+  visibility: hidden;
+}
+.registration__left .registration__form__details-input:hover::-moz-placeholder {
+  color: #F16D7F;
+}
+.registration__left .registration__form__details-input:hover::placeholder {
+  color: #F16D7F;
+}
+.registration__left .registration__form__details-input:hover {
+  border: 2px solid #F16D7F;
+}
+.registration__left .registration__form__details-text {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__left .registration__form__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  border: 1px solid #F16D7F;
+  color: #FFF;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.registration__left .registration__form__btn:hover {
+  scale: 1.1;
+}
+.registration__right {
+  margin-left: 64px;
+}
+.registration__right__title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 22px;
+}
+.registration__right__heading {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 22px;
+}
+.registration__right__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration__right__list-item {
+  display: flex;
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  list-style-type: none;
+}
+.registration__right__list-marker path {
+  fill: #000;
+}
+.registration__right__list-marker {
+  margin-right: 23px;
 }/*# sourceMappingURL=style.css.map */

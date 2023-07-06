@@ -813,3 +813,204 @@ img {
         }
     }
 }
+
+//  Регистрация
+
+.registration {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+
+    &__left {
+        margin-right: 64px;
+
+        .registration__form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &-heading {
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            &__name {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                &-input {
+                    width: 360px;
+                    height: 45px;
+                    background-color: #FFF;
+                    border: 1px solid #A4A4A4;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    transition: all 0.1s;
+
+                    &:focus::placeholder {
+                        visibility: hidden;
+                    }
+
+                    &:hover::placeholder {
+                        color: $colorSiteSelect;
+                    }
+
+                    &:hover {
+                        border: 2px solid $colorSiteSelect;
+                    }
+                }
+            }
+
+            &__radio {
+                display: flex;
+                flex-direction: row;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                color: #000;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &-input {
+                    appearance: none;
+                    border-radius: 50%;
+                    width: 17px;
+                    height: 17px;
+                    border: 2px solid #A4A4A4;
+                    transition: all 0.2s;
+
+
+                    &:checked {
+                        border: 5px solid $colorSiteSelect;
+                    }
+
+                }
+
+                &-label {
+                    margin: 0 20px 0 10px;
+                    color: #000;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+
+                    &:hover {
+                        color: $colorSiteSelect;
+                    }
+                }
+            }
+
+            &__details {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                &-input {
+                    width: 360px;
+                    height: 45px;
+                    background-color: #FFF;
+                    border: 1px solid #A4A4A4;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    transition: all 0.1s;
+
+                    &:focus::placeholder {
+                        visibility: hidden;
+                    }
+
+                    &:hover::placeholder {
+                        color: $colorSiteSelect;
+                    }
+
+                    &:hover {
+                        border: 2px solid $colorSiteSelect;
+                    }
+                }
+
+                &-text {
+                    color: #B1B1B1;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+
+            &__btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                width: 167px;
+                height: 50px;
+                background-color: $colorSiteSelect;
+                border: 1px solid $colorSiteSelect;
+                color: #FFF;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+
+    &__right {
+        margin-left: 64px;
+
+        &__title {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 28px;
+            margin-bottom: 22px;
+        }
+
+        &__heading {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 28px;
+            margin-bottom: 22px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &-item {
+                display: flex;
+                color: #000;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 29px;
+                letter-spacing: 0em;
+                text-align: left;
+                list-style-type: none;
+            }
+
+            &-marker path {
+                fill: #000;
+
+            }
+
+            &-marker {
+                margin-right: 23px;
+            }
+        }
+    }
+}
