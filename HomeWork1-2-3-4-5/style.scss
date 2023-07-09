@@ -175,9 +175,12 @@ img {
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
         gap: 30px;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
 
         .img__product {
 
@@ -190,6 +193,7 @@ img {
         }
 
         .product__item {
+            width: 360px;
             display: flex;
             flex-direction: column;
             gap: 24px;
@@ -252,22 +256,28 @@ img {
 }
 
 .filter {
+    display: flex;
     padding-top: 39px;
-    position: relative;
-    height: 132px;
+
+    &__left {
+        padding-left: 16px;
+        display: flex;
+        width: 360px;
+        position: relative;
+    }
 
     &__right {
-        left: 590px;
-        top: 51px;
-        position: absolute;
+        width: 360px;
+        display: flex;
+        left: 30px;
+        position: relative;
+        justify-content: center;
+
     }
 
     &__details {
-        padding: 13px 16px 16px;
-        width: 360px;
         position: absolute;
-        top: 39px;
-        box-sizing: border-box;
+        width: 360px;
 
         &[open] {
             background-color: #FFF;
@@ -370,7 +380,8 @@ img {
 
 .top__header {
     background-color: #F8F3F4;
-    height: 148px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -386,6 +397,7 @@ img {
 
 .breadcrumb {
     display: flex;
+    padding-right: 16px;
 
     &__box-link:last-child .breadcrumb__link {
         font-weight: 700;
@@ -698,9 +710,9 @@ img {
 }
 
 .shop__forms {
+    display: flex;
+    flex-direction: column;
     margin-top: 113px;
-    width: 360px;
-    height: 214px;
 
     .shipping__form {
         display: flex;
@@ -761,6 +773,8 @@ img {
         background: #F5F3F3;
         padding: 39px 43px 42px 43px;
         text-align: right;
+        width: 360px;
+        height: 214px;
 
         & h6 {
             color: #4A4A4A;
@@ -1010,6 +1024,150 @@ img {
 
             &-marker {
                 margin-right: 23px;
+            }
+        }
+    }
+}
+
+// Стили для планшета
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - $widthSiteTablet);
+        padding-right: calc(50% - $widthSiteTablet);
+    }
+
+    .promo {
+
+        &__content {
+            padding-left: 0;
+        }
+
+        &__img {
+            width: 50%;
+        }
+
+        &__info {
+            margin-bottom: 18%;
+            margin-top: 18%;
+        }
+
+        &__title {
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        &__heading {
+            font-size: 25px;
+            line-height: 28px;
+        }
+    }
+
+    .sale {
+        padding-top: 0;
+        gap: 8px;
+
+        &__item {
+
+            padding: 10px;
+
+            &:hover {
+                scale: 1;
+            }
+        }
+
+        &__item_big {
+            min-height: 0;
+        }
+    }
+
+    .product-box {
+        gap: 16px;
+        margin-bottom: 64px;
+
+        &__content {
+            padding-left: 16px;
+            padding-right: 16px;
+            gap: 16px;
+
+        }
+
+        .button__product {
+            margin-top: 32px;
+        }
+    }
+
+    .advantages {
+        flex-direction: column;
+        height: 610px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__item {
+            width: 360px;
+        }
+    }
+
+    .top__header {
+
+        &__heading {
+            padding-left: 16px;
+        }
+    }
+
+    .filter {
+        justify-content: center;
+
+        &__left {
+            padding-left: 0;
+        }
+    }
+
+    .shopping {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 128px;
+
+        .shop__cart {
+            margin-bottom: 0;
+
+            &-buttons {
+                justify-content: center;
+                gap: 48px;
+            }
+        }
+
+        .shop__forms {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 62px;
+
+        }
+    }
+
+    .registration {
+        gap: 22px;
+
+        &__left {
+            margin-right: 0;
+            padding-left: 16px;
+        }
+
+        &__right {
+            margin-left: 0;
+
+            &__title {
+                font-size: 16px;
+            }
+
+            &__heading {
+                font-size: 16px;
+            }
+
+            &__list-item {
+                font-size: 16px;
             }
         }
     }

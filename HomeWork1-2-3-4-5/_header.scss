@@ -132,3 +132,23 @@
 
     }
 }
+
+@media (max-width: 1024px) {
+
+    .header {
+        &__left {
+            padding-left: 32px;
+        }
+
+        &__right {
+            gap: 25px;
+            padding-right: 32px;
+        }
+
+        &__menu {
+            &__content {
+                width: 190px;
+            }
+        }
+    }
+}
