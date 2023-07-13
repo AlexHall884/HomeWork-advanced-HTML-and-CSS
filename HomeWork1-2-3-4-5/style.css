@@ -71,7 +71,11 @@
 .header__icon:hover path {
   fill: #F16D7F;
 }
+.header__menu {
+  z-index: 3;
+}
 .header__menu__content {
+  right: 0;
   background-color: #fff;
   width: 232px;
   height: 639px;
@@ -128,6 +132,22 @@
     width: 190px;
   }
 }
+@media (max-width: 767px) {
+  .header__left {
+    padding-left: 16px;
+  }
+  .header__right {
+    padding-right: 16px;
+  }
+  .header__link {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .header__left .search__input {
+    width: 100px;
+  }
+}
 .footer {
   background-color: #222224;
   min-height: 79px;
@@ -167,6 +187,22 @@
   }
   .footer__right {
     padding-right: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 42px;
+    padding-bottom: 10px;
+    flex-direction: column-reverse;
+    min-height: 143px;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer__left {
+    padding-left: 0;
+  }
+  .footer__right {
+    padding-right: 0;
   }
 }
 .subscribe {
@@ -284,6 +320,24 @@
     margin-bottom: 140px;
   }
 }
+@media (max-width: 768px) {
+  .subscribe__left {
+    width: 290px;
+  }
+  .subscribe__left__text {
+    font-size: 18px;
+  }
+  .subscribe__right {
+    width: 290px;
+  }
+  .subscribe__right__title {
+    line-height: 37px;
+  }
+  .subscribe__right__heading {
+    font-size: 14px;
+    line-height: 27px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -321,7 +375,7 @@ img {
 }
 
 .top {
-  position: relative;
+  overflow: hidden;
 }
 
 .promo {
@@ -433,6 +487,7 @@ img {
   /* identical to box height */
   color: #9F9F9F;
   margin-bottom: 48px;
+  text-align: center;
 }
 .product-box__content {
   display: flex;
@@ -447,7 +502,7 @@ img {
   width: max-content;
 }
 .product-box__content .img__product:hover {
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 .product-box__content .product__item {
   width: 360px;
@@ -508,7 +563,6 @@ img {
   padding-top: 39px;
 }
 .filter__left {
-  padding-left: 16px;
   display: flex;
   width: 360px;
   position: relative;
@@ -521,6 +575,7 @@ img {
   justify-content: center;
 }
 .filter__details {
+  padding: 16px;
   position: absolute;
   width: 360px;
 }
@@ -658,6 +713,7 @@ img {
   justify-content: space-between;
   gap: 28px;
   margin-bottom: 62px;
+  padding-top: 16px;
 }
 .sort__details {
   display: flex;
@@ -1026,7 +1082,6 @@ img {
   gap: 20px;
 }
 .registration__left .registration__form__name-input {
-  width: 360px;
   height: 45px;
   background-color: #FFF;
   border: 1px solid #A4A4A4;
@@ -1090,7 +1145,6 @@ img {
   gap: 20px;
 }
 .registration__left .registration__form__details-input {
-  width: 360px;
   height: 45px;
   background-color: #FFF;
   border: 1px solid #A4A4A4;
@@ -1242,10 +1296,10 @@ img {
     padding-left: 16px;
   }
   .filter {
-    justify-content: center;
+    gap: 25px;
   }
   .filter__left {
-    padding-left: 0;
+    padding-left: 16px;
   }
   .shopping {
     flex-direction: column;
@@ -1284,5 +1338,271 @@ img {
   }
   .registration__right__list-item {
     font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 195px);
+    padding-right: calc(50% - 195px);
+  }
+  .promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .promo__img {
+    display: none;
+  }
+  .promo__info {
+    margin-bottom: 55%;
+    margin-top: 55%;
+  }
+  .promo__heading {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .promo__title {
+    font-size: 38px;
+    line-height: 53px;
+  }
+  .sale {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 64px;
+    margin-top: 64px;
+  }
+  .sale__heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .sale .big-img {
+    height: 15vh;
+  }
+  .product-box {
+    padding: 8px;
+  }
+  .product-box__content {
+    padding: 8px;
+    justify-content: center;
+  }
+  .advantages__item {
+    width: 290px;
+  }
+  .top__header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding-bottom: 42px;
+    padding-top: 24;
+  }
+  .top__header .breadcrumb {
+    padding-right: 0;
+  }
+  .filter {
+    padding-top: 24px;
+  }
+  .filter__left {
+    width: 60px;
+    padding-left: 8px;
+  }
+  .filter__left svg {
+    width: 20px;
+    height: 20px;
+  }
+  .filter__title {
+    display: none;
+  }
+  .filter__details {
+    padding: 8px;
+    width: 290px;
+    z-index: 1;
+  }
+  .filter__right {
+    left: 0;
+    padding-right: 8px;
+  }
+  .sort {
+    gap: 22px;
+    margin-bottom: 42px;
+    padding-top: 8px;
+  }
+  .sort__summary {
+    gap: 8px;
+  }
+  .sort__details {
+    z-index: 1;
+  }
+  .slider__arrow {
+    top: 120px;
+  }
+  .slider__img {
+    width: 75%;
+  }
+  .content {
+    margin: 0;
+    padding-left: calc(50% - 195px);
+    padding-right: calc(50% - 195px);
+  }
+  .content__text {
+    width: 95vw;
+  }
+  .content__line-big {
+    width: 175px;
+  }
+  .shopping {
+    margin-bottom: 96px;
+  }
+  .shopping .shop__cart {
+    margin-top: 39px;
+  }
+  .shopping .shop__cart-buttons {
+    gap: 9px;
+  }
+  .shopping .shop__cart-buttons-btn {
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+  .shopping .shop__cart-buttons-link {
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+  .shopping .shop__cart .cart__card {
+    margin-bottom: 32px;
+  }
+  .shopping .shop__cart .cart__card .card__img {
+    width: 143.859px;
+    height: 188px;
+  }
+  .shopping .shop__cart .cart__card__icon {
+    right: 12px;
+    width: 14px;
+    height: 14px;
+  }
+  .shopping .shop__cart .cart__card-text {
+    width: 214.141px;
+    height: 188px;
+    padding: 13px 53px 17px 38px;
+  }
+  .shopping .shop__cart .cart__card-text span {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #575757;
+  }
+  .shopping .shop__cart .cart__card-text .text__decor {
+    color: #F16D7F;
+  }
+  .shopping .shop__cart .cart__card-text .quantity__input {
+    width: 24px;
+    height: 15px;
+    margin-left: 15px;
+  }
+  .shopping .shop__cart .cart__card__title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+  .shopping .shop__forms {
+    margin-top: 48px;
+    flex-direction: column;
+  }
+  .shopping .shop__forms .shipping__form input {
+    width: 290px;
+    font-size: 14px;
+  }
+  .shopping .check__form {
+    padding: 39px 34px 42px 43px;
+  }
+  .registration {
+    flex-direction: column;
+  }
+  .registration__left {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .registration__right {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .product-box__content {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+  .product-box .product__item {
+    width: 290px;
+  }
+  .product-box .img__product {
+    width: 290px;
+  }
+  .sort {
+    width: 290px;
+  }
+  .sort__summary {
+    gap: 6px;
+  }
+  .shopping .shop__cart {
+    padding: 8px;
+  }
+  .shopping .shop__cart-buttons {
+    gap: 9px;
+  }
+  .shopping .shop__cart-buttons-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .shopping .shop__cart-buttons-link {
+    padding: 6px 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .shopping .shop__cart .cart__card .card__img {
+    width: 140px;
+    height: 188px;
+  }
+  .shopping .shop__cart .cart__card__icon {
+    right: 10px;
+    width: 12px;
+    height: 10px;
+  }
+  .shopping .shop__cart .cart__card-text {
+    width: 150px;
+    height: 188px;
+    padding: 13px 43px 17px 28px;
+  }
+  .shopping .shop__cart .cart__card-text span {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #575757;
+  }
+  .shopping .shop__cart .cart__card-text .text__decor {
+    color: #F16D7F;
+  }
+  .shopping .shop__cart .cart__card-text .quantity__input {
+    width: 20px;
+    height: 12px;
+    margin-left: 12px;
+  }
+  .shopping .shop__cart .cart__card__title {
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+  .shopping .shop__forms {
+    padding: 8px;
+    flex-direction: column;
+  }
+  .shopping .shop__forms .shipping__form input {
+    width: 280px;
+    font-size: 12px;
+  }
+  .shopping .check__form {
+    width: 290px;
+    padding: 39px 34px 42px 43px;
+  }
+  .shopping .check__form button {
+    width: 230px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -79,8 +79,10 @@
     }
 
     &__menu {
+        z-index: 3;
 
         &__content {
+            right: 0;
             background-color: #fff;
             width: 232px;
             height: 639px;
@@ -88,6 +90,7 @@
             position: absolute;
             transition: display 1s;
             z-index: 1;
+
         }
 
         &__title {
@@ -133,6 +136,8 @@
     }
 }
 
+// Стили для планшета
+
 @media (max-width: 1024px) {
 
     .header {
@@ -148,6 +153,46 @@
         &__menu {
             &__content {
                 width: 190px;
+            }
+        }
+    }
+}
+
+// Стили для смартфона
+
+@media (max-width: 767px) {
+
+    .header {
+
+        &__left {
+            padding-left: 16px;
+
+            .search {
+                &__input {}
+            }
+        }
+
+        &__right {
+            padding-right: 16px;
+        }
+
+        &__link {
+            display: none;
+        }
+    }
+}
+
+
+// Стили для смартфона Small
+@media (max-width: 360px) {
+    .header {
+
+        &__left {
+
+            .search {
+                &__input {
+                    width: 100px;
+                }
             }
         }
     }

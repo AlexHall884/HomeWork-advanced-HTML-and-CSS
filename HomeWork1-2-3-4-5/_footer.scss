@@ -49,3 +49,23 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        padding-top: 42px;
+        padding-bottom: 10px;
+        flex-direction: column-reverse;
+        min-height: 143px;
+        justify-content: center;
+        gap: 40px;
+
+        &__left {
+
+            padding-left: 0;
+        }
+
+        &__right {
+            padding-right: 0;
+        }
+    }
+}

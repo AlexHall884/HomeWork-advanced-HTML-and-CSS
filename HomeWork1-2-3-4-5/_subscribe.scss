@@ -130,3 +130,30 @@
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .subscribe {
+
+        &__left {
+            width: 290px;
+
+            &__text {
+                font-size: 18px;
+            }
+        }
+
+        &__right {
+            width: 290px;
+
+            &__title {
+                line-height: 37px;
+            }
+
+            &__heading {
+                font-size: 14px;
+                line-height: 27px;
+            }
+        }
+    }
+}
