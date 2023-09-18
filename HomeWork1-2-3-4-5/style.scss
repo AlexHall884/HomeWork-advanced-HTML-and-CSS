@@ -143,8 +143,6 @@ img {
         text-align: center;
         color: $colorSiteSelect;
     }
-
-
 }
 
 .product-box {
@@ -183,20 +181,62 @@ img {
         flex-wrap: wrap;
         flex-direction: row;
 
-        .img__product {
-            width: max-content;
-
-            &:hover {
-                filter: brightness(0.4);
-            }
-        }
-
         .product__item {
             width: 360px;
             display: flex;
             flex-direction: column;
             gap: 24px;
             background-color: #F8F8F8;
+
+            .item-img {
+                width: 360px;
+                height: 420px;
+
+                &:hover .item-img__hover {
+                    display: flex;
+                }
+
+                &__hover {
+                    background: rgba(58, 56, 56, 0.86);
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+
+                    &-btn {
+                        cursor: pointer;
+                        background: transparent;
+                        outline: none;
+                        border: 1px solid #ffffff;
+                        padding: 13px 16px;
+                        display: flex;
+                        align-items: center;
+                        gap: 11px;
+
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #ffffff;
+
+                        &::before {
+
+                            width: 26px;
+                            height: 24px;
+                        }
+
+                        &:hover {
+                            scale: 1.1;
+                            color: $colorSiteSelect;
+                            border: 1px solid $colorSiteSelect;
+                        }
+                    }
+
+                }
+
+            }
 
             &__content {
                 display: flex;
@@ -1440,11 +1480,13 @@ img {
 
         .product__item {
             width: 290px;
+
+            .item-img {
+                width: 290px;
+            }
         }
 
-        .img__product {
-            width: 290px;
-        }
+
     }
 
     .sort {
