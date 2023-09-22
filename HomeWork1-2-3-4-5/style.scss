@@ -192,6 +192,7 @@ img {
                 width: 360px;
                 height: 420px;
 
+
                 &:hover .item-img__hover {
                     display: flex;
                 }
@@ -203,6 +204,7 @@ img {
                     display: none;
                     justify-content: center;
                     align-items: center;
+
 
                     &-btn {
                         cursor: pointer;
@@ -220,6 +222,7 @@ img {
                         font-size: 14px;
                         line-height: 17px;
                         color: #ffffff;
+                        transition: all 0.3s;
 
                         &::before {
 
@@ -230,8 +233,14 @@ img {
                         &:hover {
                             scale: 1.1;
                             color: $colorSiteSelect;
-                            border: 1px solid $colorSiteSelect;
+                            border: 1.5px solid $colorSiteSelect;
+                            fill: $colorSiteSelect;
                         }
+
+                        &:hover path {
+                            fill: $colorSiteSelect;
+                        }
+
                     }
 
                 }
@@ -293,6 +302,7 @@ img {
         color: #FFFFFF;
     }
 }
+
 
 .filter {
     display: flex;
@@ -414,6 +424,52 @@ img {
         line-height: 17px;
         color: #FBFBFB;
         text-align: center;
+    }
+}
+
+.cart-item {
+    margin-top: 96px;
+    margin-bottom: 96px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+
+
+    .title {
+        margin-bottom: 64px;
+        color: #222;
+        font-family: Lato;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    .cart__card {
+        position: relative;
+        transition: all 0.3s;
+        margin-right: 400px;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    .btn__del {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        height: 18px;
+        width: 18px;
+        font-size: 0;
+        border: none;
+        background: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
     }
 }
 

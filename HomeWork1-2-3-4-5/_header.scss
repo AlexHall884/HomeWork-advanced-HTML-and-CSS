@@ -64,7 +64,9 @@
         &__icon:hover path {
             fill: $colorSiteSelect;
         }
+
     }
+
 
     &__right {
         padding: 18px 0 18px 0;
@@ -135,6 +137,27 @@
 
     }
 }
+
+.count {
+    position: absolute;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: $colorSiteSelect;
+
+    &::after {
+        content: attr(data-count);
+        position: absolute;
+        bottom: -10px;
+        right: -40px;
+        padding: 2px 6px;
+        border-radius: 50%;
+        background-color: $colorSiteSelect;
+        color: white;
+        font-size: 14px;
+    }
+}
+
 
 // Стили для планшета
 
